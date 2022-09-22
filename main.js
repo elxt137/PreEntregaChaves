@@ -38,7 +38,7 @@ function volCamara(largoCamara, anchoCamara, alturaCamara){
 ingresarNombre();
 nombreEmpresa();
 volCamara();
-alert (volumenCamara)
+alert ("el volumen te la camara es: " + volumenCamara + "metros cubicos")
 
 // se debe ingresar la variedad de la fruta para calcular la dosis
 // las dos constantes son necesarias para el calculo de la dosis en Gramos, que seria, volumen de la camara * la constante = X Gr 
