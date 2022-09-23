@@ -5,7 +5,7 @@
 
 function ingresarNombre(){
     let nombreAplicador = prompt ("porfavor ingrese su nombre")
-    alert("Bienvenido a Aplicador: " + nombreAplicador) 
+    alert("Bienvenido Aplicador : " + nombreAplicador) 
     return nombreAplicador;
 }
 
@@ -38,7 +38,7 @@ function volCamara(largoCamara, anchoCamara, alturaCamara){
 ingresarNombre();
 nombreEmpresa();
 volCamara();
-alert ("el volumen te la camara es: " + volumenCamara + "M³")
+alert ("el volumen de la camara es: " + volumenCamara + "M³")
 
 // se debe ingresar la variedad de la fruta para calcular la dosis
 // las dos constantes son necesarias para el calculo de la dosis en Gramos, que seria, volumen de la camara * la constante = X Gr 
@@ -46,17 +46,17 @@ alert ("el volumen te la camara es: " + volumenCamara + "M³")
     const MCPPERA = 0.02;
     let dosisAAplicar; 
 //calcula la dosis segun variedad
-    let especieFruta = prompt ("ingrese si la especie es pera o manzana") 
+    let especieFruta = prompt ("ingrese si la especie a aplicar es pera o manzana") 
     
        
             
             
             if (especieFruta==="manzana") {
                 dosisAAplicar =  MCPMANZANA * volumenCamara;
-                alert (" la dosis a aplicar es de: " + dosisAAplicar + "gr")
+                alert (" la dosis a aplicar es de: " + dosisAAplicar + "gr de 1mpc")
             } else if (especieFruta==="pera") {
                 dosisAAplicar = MCPPERA * volumenCamara;
-                alert (" la dosis a aplicar es de: " + dosisAAplicar + "gr")
+                alert (" la dosis a aplicar es de: " + dosisAAplicar + "gr de 1mpc")
             } else {
                     alert("la variedad ingresada no entre dentro de nuestro servicio")
                    
