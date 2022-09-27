@@ -1,4 +1,27 @@
-    
+
+
+
+let selectRegion = alert ("elija la zona donde se realizara la aplicacion");
+    alert ("1 Villa Regina - 2 Cipolleti - 3 General Roca")
+        let distanciaRegina = 100;
+        let distanciaCipolleti = 85;
+        let distanciaGeneralroca = 25;
+             SelectDistancia = prompt("ingresa una ciudad");
+                 switch(SelectDistancia){
+                    case "1":
+                        alert("has elegido Villa regina vas a sumar: $" + distanciaRegina*60 + " en viaticos");
+                        break;
+                    case "2":
+                        alert("has elegido Cipolleti vas a sumar: $" + distanciaCipolleti*60 +" en viaticos");
+                        break;
+                    case "3":
+                        alert("has elegido Villa regina vas a sumar: $ " + distanciaGeneralroca*60 +" en viaticos");
+                        break;
+                        default:
+        
+                        alert("ingresa una opcion valida")
+
+    }
 
 
 // ingresar el nombre del aplicador
