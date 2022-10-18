@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="barralog navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">LogFresh</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,29 +35,82 @@
           </nav>
     </header>     
 
-    <main>
-        <section id="banner" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#banner" data-slide-to="0" class="active"></li>
-              <li data-target="#banner" data-slide-to="1" class=""></li>
-              <li data-target="#banner" data-slide-to="2" class=""></li>
-            </ul>
+    <main class="bg-success">
+     <div>  
+      
+      <form class="formulario__input col-12">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nombre y Apellido</label>
+            <input type="email" class="nombreyApellido form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Nombre de la Empresa</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Largo de Camara en metros</label>
+          <input type="number" class="form-control" id="valorLargo" step="0.1" oninput="calcular()" placeholder="ingresar en metros">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Ancho de Camara en metros</label>
+          <input type="number" class="form-control" id="valorAncho" step="0.1" oninput="calcular()" placeholder="ingresar en metros">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Alto de Camara en metros</label>
+            <input type="number" class="form-control" id="valorAlto" oninput="calcular()" step="0.1" placeholder="ingresar en metros">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">Volumen de Camara</label>
+            <input type="number" class="form-control" id="valorTotal" step="10" placeholder="volumen total de la camara">
+          </div>
+         
+        <div class="form-row col-md-4">
+            <label for="inputState">Ingrese una variedad de fruta</label>
+            <select id="ingreso" oninput="dosis()" class="form-control">
+              <option selected>Choose...</option>
+              <option>Pera</option>
+              <option>Manzana</option>
+            </select>
+        </div>
           
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="w-100" src="./img/1306521.jpeg" alt="bong">
-              </div>
+        <div class="form-row">
+            <label for="inputCity">Dosis en gramos</label>
+            <input type="number" class="form-control" id="gramos1MPC" step="0.1" placeholder="Gramos de 1mpc">
+        </div>
+      </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Stock de productos</label>
+          <textarea class="form-control" id="objetoTexto" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Se deberan comprar los siguientes productos</label>
+          <textarea class="form-control" id="stock" rows="3"></textarea>
+        </div>
+      </form>
+      
+
               
               
         
-        </section>
-      </section>
+    </div>  
+    
+      
         
-    </div>
-    <section class="container container-md container-lg container-xl">
+    
+      <section class="container container-md container-lg container-xl">
         <div class="row">
             <div class="col-lg-4 col-xl-4 my-3" data-aos="fade-down" data-aos-duration="2000">
                 <div class="mx-4 my-3 p-3 shadow rounded-lg"> 
@@ -87,7 +140,7 @@
                 </div>
             </div>
         </div>
-    </section>
+      </section>
 
     </main>    
     <footer class="">
